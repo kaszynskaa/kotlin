@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Horizontal LinearLayout for item details -->
+
+        <ImageView
+            android:id="@+id/itemPhotoImageView"
+            android:layout_width="64dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/supplies" />
+
+        <LinearLayout
+            android:id="@+id/idLL1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/itemPhotoImageView"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <!-- TextView for item name -->
+            <TextView
+                android:id="@+id/idtvitemname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/gabriela"
+                android:padding="4dp"
+                android:text="Item Name"
+                android:textColor="@color/black" />
+
+            <!-- TextView for quantity -->
+            <TextView
+                android:id="@+id/idtvquantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1.25"
+                android:fontFamily="@font/gabriela"
+                android:padding="4dp"
+                android:text="Quantity"
+                android:textColor="@color/black" />
+
+            <!-- TextView for rate -->
+            <TextView
+                android:id="@+id/idtvrate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="1.25"
+                android:fontFamily="@font/gabriela"
+                android:padding="4dp"
+                android:text="Rate"
+                android:textColor="@color/black" />
+
+            <!-- ImageView for delete button -->
+            <ImageView
+                android:id="@+id/idivdelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:layout_weight="0.5"
+                android:padding="4dp"
+                android:src="@drawable/ic_baseline_delete_24"
+                app:tint="@color/blue_light" />
+
+        </LinearLayout>
+
+        <!-- TextView for expiration status -->
+
+        <TextView
+            android:id="@+id/idtvexpirationstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idLL1"
+            android:layout_margin="3dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/gabriela"
+            android:padding="4dp"
+            android:text="Expiration Status"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/idtvExpirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtvexpirationstatus"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/gabriela"
+            android:text="Expiration Date"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <!-- TextView for total cost heading -->
+
+        <!-- TextView for total amount -->
+        <TextView
+            android:id="@+id/idtvheading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtvCategory"
+            android:layout_margin="3dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/gabriela"
+            android:padding="4dp"
+            android:text="Total Cost :"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/idtvtotalamount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtvCategory"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="3dp"
+            android:fontFamily="@font/gabriela"
+            android:padding="4dp"
+            android:text="Amount"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/idtvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtvExpirationDate"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/gabriela"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

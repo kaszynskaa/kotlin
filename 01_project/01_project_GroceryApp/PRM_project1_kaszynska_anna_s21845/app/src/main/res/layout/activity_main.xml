@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F9F9F9"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Header CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/header_bg"
+        android:backgroundTint="@color/purple_500">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/gabriela"
+            android:text="Grocery Reminder"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="55dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_baseline_check_24"
+            android:layout_marginTop="10dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Filter Buttons and Spinner -->
+    <LinearLayout
+        android:id="@+id/filterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp" />
+
+        <RadioGroup
+            android:id="@+id/expirationStatusRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="1dp"
+            android:fontFamily="@font/gabriela">
+
+            <RadioButton
+                android:id="@+id/expirationStatusValid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gabriela"
+                android:text="Valid" />
+
+            <RadioButton
+                android:id="@+id/expirationStatusExpired"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gabriela"
+                android:text="Expired" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/filterApplyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="9dp"
+            android:backgroundTint="@color/purple_500"
+            android:fontFamily="@font/gabriela"
+            android:text="Apply Filters"
+            android:textStyle="bold"
+            android:textSize="7sp" />
+
+    </LinearLayout>
+
+    <!-- RecyclerView for displaying grocery items -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvitems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filterLayout"
+        android:padding="5dp" />
+
+    <!-- FloatingActionButton for adding new items -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/purple_700"
+        android:elevation="5dp"
+        android:src="@drawable/ic_baseline_add"
+        app:tint="@color/white" />
+
+    <!-- TextView for item count -->
+    <TextView
+        android:id="@+id/itemCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/filterLayout"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="597dp"
+        android:fontFamily="@font/gabriela"
+        android:padding="10dp"
+        android:text="Number of items:"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

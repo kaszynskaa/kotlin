@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:backgroundTint="#FEFBF6"
+    android:background="@drawable/btn_bg"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/idtvHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@color/purple_500"
+            android:gravity="center"
+            android:padding="4dp"
+            android:fontFamily="@font/gabriela"
+            android:text="Add Item To List"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="65dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_baseline_local_grocery_store_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.797"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtvHeading"
+            android:orientation="vertical">
+            <!-- Additional input fields for item details -->
+            <!-- New Button for selecting images from the gallery -->
+            <Button
+                android:id="@+id/selectImageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Image"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtitemname"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/gabriela"
+                    android:hint="Enter item Name"
+                    android:inputType="text"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtitemquantity"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/gabriela"
+                    android:hint="Enter item Quantity in kg"
+                    android:inputType="numberDecimal"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtitemprice"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/gabriela"
+                    android:hint="Enter item Price /kg"
+                    android:inputType="numberDecimal"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- New Fields for Category and Expiration Date -->
+            <!-- Radio Group for category -->
+            <RadioGroup
+                android:id="@+id/idRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idtvrate"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <RadioButton
+                    android:id="@+id/idRadioFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gabriela"
+                    android:text="Food" />
+
+                <RadioButton
+                    android:id="@+id/idRadioMedicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gabriela"
+                    android:text="Medicine" />
+
+                <RadioButton
+                    android:id="@+id/idRadioCosmetics"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gabriela"
+                    android:text="Cosmetics" />
+            </RadioGroup>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+
+                <EditText
+                    android:id="@+id/idEdtexpirationdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gabriela"
+                    android:hint="Enter Expiration Date (YYYY-MM-DD)"
+                    android:inputType="date"
+                    android:focusable="false" />
+
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/idEdtexpirationdate"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:hint="Enter Expiration Date (YYYY-MM-DD)"-->
+<!--                    android:inputType="date"-->
+<!--                    app:hintTextColor="@color/black"-->
+<!--                    app:counterTextColor="@color/black"-->
+<!--                    />-->
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Buttons for add and cancel actions -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:id="@+id/idbtncancel"
+                    android:fontFamily="@font/gabriela"
+                    android:text="Cancel"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_bg"
+                    android:textAllCaps="false" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:id="@+id/idbtnadd"
+                    android:fontFamily="@font/gabriela"
+                    android:text="Add"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btn_bg"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
