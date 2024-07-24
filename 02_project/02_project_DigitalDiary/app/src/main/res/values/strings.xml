@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Happy Places</string>
+
+    <string name="failed_to_add_details">Failed to add details</string>
+    <string name="failed_to_update_details">Failed to update details</string>
+    <string name="failed_to_updated_details">Details updated successfully</string>
+
+    <string name="google_maps_api_key">AIzaSyD_E28QewX8CnhhoL5SmC_RcgotTLy8PwU</string>
+
+    <string name="edit_text_hint_title">Title</string>
+    <string name="edit_text_hint_description">Description</string>
+    <string name="edit_text_hint_date">Date</string>
+    <string name="edit_text_hint_location">Location</string>
+    <string name="text_add_image">ADD IMAGE</string>
+    <string name="hint_caption">Enter Caption</string>
+    <string name="btn_text_save">SAVE</string>
+
+    <string name="note_text_no_happy_places_found_yet_kindly_add_one">No Happy Places Found Yet\nTry adding one!</string>
+    <string name="image_content_description">image</string>
+
+    <string name="btn_text_view_on_map">VIEW ON MAP</string>
+    <string name="add_place_select_current_location_text">SELECT CURRENT LOCATION</string>
+
+    <string name="enter_text">Enter Text</string>
+    <string name="draw_text">Draw Text</string>
+    <string name="save_image">Save Image</string>
+    <string name="failed_to_save_image">Failed to Save Image</string>
+
+<!--    Literals:-->
+<!--    0. auth:-->
+    <string name="set_your_password">Set your password</string>
+    <string name="set_password">Set Password</string>
+    <string name="incorrect_password_or_pin">Incorrect password or PIN</string>
+    <string name="password_set_successfully">Password set successfully</string>
+<!--    0' database:-->
+    <string name="database_name">HappyPlacesDatabase</string>
+    <string name="table_happy_place">HappyPlaceTable</string>
+    <string name="key_id">_id</string>
+    <string name="key_title">title</string>
+    <string name="key_image">image</string>
+    <string name="key_description">description</string>
+    <string name="key_date">date</string>
+    <string name="key_location">location</string>
+    <string name="key_latitude">latitude</string>
+    <string name="key_longitude">longitude</string>
+    <string name="key_audio">audio</string>
+    <string name="key_caption">caption</string>
+
+    <string name="error_getting_documents">error_getting_documents</string>
+    <string name="document_added_with_id">document_added_with_id</string>
+    <string name="error_adding_document">error_adding_document</string>
+    <string name="document_updated_successfully">document_updated_successfully</string>
+    <string name="error_updating_document">error_updating_document</string>
+<!--    1. add place:-->
+    <string name="failed_to_load_image">Failed to load the image</string>
+    <string name="error_getting_selected_file">Error getting selected file</string>
+    <string name="please_enter_title">Please enter title</string>
+    <string name="please_select_image">Please select an image</string>
+    <string name="details_inserted_successfully">The happy place details are inserted successfully.</string>
+    <string name="details_updated_successfully">The happy place details are updated successfully.</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="stop_recording">Stop Recording</string>
+    <string name="recording_failed">Recording failed</string>
+    <string name="audio_recorded_successfully">Audio recorded successfully</string>
+    <string name="permission_denied_record_audio">Permission denied to record audio</string>
+    <string name="permission_denied_access_location">Permission denied to access location</string>
+    <string name="permission_denied_read_external_storage">Permission denied to read your External storage</string>
+    <string name="failed_to_load_image_from_gallery">Failed to load the image from gallery</string>
+<!--    2. Geocoder:-->
+    <string name="unable_to_connect_to_geocoder">Unable to connect to Geocoder</string>
+<!--    3. Geofence:-->
+    <string name="geofence_error">Geofence error: </string>
+    <string name="entered_happy_place">You have entered a Happy Place!</string>
+    <string name="geofence_channel_id">geofence_channel</string>
+    <string name="geofence_channel_name">Geofence Notifications</string>
+    <string name="geofence_alert_title">Geofence Alert</string>
+
+</resources>

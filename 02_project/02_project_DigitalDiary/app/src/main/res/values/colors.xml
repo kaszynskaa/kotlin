@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B0BEC5</color> <!-- Silver -->
+    <color name="colorPrimaryDark">#37474F</color> <!-- Dark Grey -->
+    <color name="colorAccent">#90A4AE</color> <!-- Grey Blue -->
+
+    <color name="primary_text_color">#212121</color> <!-- Black -->
+    <color name="secondary_text_color">#9E9E9E</color> <!-- Light Grey -->
+    <color name="white_color">#FFFFFF</color> <!-- White -->
+    <color name="button_background_color">#B0BEC5</color> <!-- Silver -->
+
+    <color name="circular_image_border_color">#757575</color> <!-- Grey -->
+    <color name="item_happy_place_description_text_color">#424242</color> <!-- Dark Grey -->
+
+    <color name="detail_screen_description_text_color">#757575</color> <!-- Grey -->
+
+    <!-- Gradient colors for a shadow effect -->
+    <color name="gradient_start">#B0BEC5</color> <!-- Silver -->
+    <color name="gradient_end">#90A4AE</color> <!-- Grey Blue -->
+</resources>
